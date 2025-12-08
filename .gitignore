@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node / Vite
+node_modules/
+dist/
+*.log
+
+# macOS
+.DS_Store
+
+# Data (optional — uncomment to ignore local data)
+# data/raw/
+# data/processed/
+# data/features/
