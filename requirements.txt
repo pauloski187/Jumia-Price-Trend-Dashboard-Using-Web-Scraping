@@ -5,3 +5,13 @@ pandas>=2.0
 matplotlib>=3.7
 seaborn>=0.13
 scikit-learn>=1.3
+
+# Scraping
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Scheduling (to run scraper daily at 08:00 local time)
+schedule>=1.2
+
+# App-integrated scheduler
+APScheduler>=3.10
