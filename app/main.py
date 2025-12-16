@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from .routes import router
 from .scheduler import start_scheduler, shutdown_scheduler
 
@@ -18,3 +19,7 @@ def get_app() -> FastAPI:
 
 
 app = get_app()
+
+# Serve the Plotly frontend (index.html) from the frontend directory
+# This will make the dashboard available at "/" and static assets under the same path
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
